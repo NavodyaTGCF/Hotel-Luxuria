@@ -1,0 +1,203 @@
+<!-- BRANCHES PAGE -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Hotel Luxuria- Booking</title>
+    <link rel="shortcut icon" href="images/logooo.png">
+    <script src="main.js" defer></script>
+</head>
+<body>
+  <header><h3>last visited: 678,003</h3></header>
+  <!-- navigation bar -->
+    <div id="navbar">
+        <div>
+              <img src="images/logooo.png" alt="logo" class="logo">
+        </div>
+      <nav>
+         <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="Resturant.html">RESTURANT</a></li>
+               <li><a href="Adventure.html">ADVENTURE</a></li>
+              <li><a href="branches.html">BRANCHES</a></li>
+               <li><a href="booking.html">BOOKING</a></li>
+           </ul>
+      </nav>
+          
+        <div>
+          <button type="button"  class="buttons">Log in</button>
+        </div>
+
+
+    </div>
+
+    
+     <br><br><br><br>
+    <h1 class="booking-topicc">#BOOKING</h1>
+
+    <img src="images/travel lady.jpg" alt="travel lady">
+
+    
+    <form action="" id="fillingFORM">
+      <div>
+        <div>
+          <h3>BOOKING FORM</h3>
+          <br><br>
+          <label for="username" max="20">Name: </label>
+          <input type="text" id="username" placeholder="Enter Your Name">
+        </div>
+        <br>
+        <div>
+          <label for="number" max="10">Contact </label>
+          <input type="numb
+          er" id="contact_no"  placeholder="Enter Your Contact Number">
+        </div>
+        <br>
+      </form>
+      <form action="" id="bookingfORM">
+        <br>
+        <div>
+          <label for="date">Check-In-Date</label>
+          <input type="date" id="check_in">
+        </div>
+        <br>
+        <div>
+          <label for="date">Check-Out-Date</label>
+          <input type="date" id="check_out">
+        </div>
+        <br>
+        <div>
+          <label for="singleRooms" max="5">Single Rooms:</label>
+          <input type="number" id="single_Rooms" min="0" max="12">
+          <label for="doubleRooms"  max="5">Double Rooms:</label>
+          <input type="number" id="double_Rooms" min="0" max="12">
+          <label for="trippleRooms"  max="5">Tripple Rooms:</label>
+          <input type="number" id="tripple_Rooms" min="0" max="12">
+          <label for="extraRooms"  max="5">Extra Rooms:</label>
+          <input type="number" id="Extra_rooms" min="0" max="12">
+        </div>
+        <br>
+        <div>
+          <label for="Adults" max="2">Adults: </label>
+          <input type="number" min="0" max="12" id="aduts">
+          <label for="childsabovefive" max="2">Children above Five: </label>
+          <input type="number" id="above_five" min="0" max="12"><label for="childrenunderfive" min="0" max="2">Children Under Five: </label>
+          <input type="number" min="0" max="12" id="under_five" >
+         </div>
+         <br>
+        <div>
+          <h3>Please add Extra requirements(Optional)</h3>
+          <br>
+          <label for="wifi">Wi-Fi</label>
+          <input type="checkbox" id="wifi">
+          <label for="Beach_view">Beach View</label>
+          <input type="checkbox" id="beach_view">
+          <label for="garden View">Garden View</label>
+          <input type="checkbox" id="garden View">
+        </div>
+        <br><br>
+        <div><button type="button" id="coste">Check Cost</button>
+          <p id="totalCostDisplay"></p></div>
+        <div>
+        <br>
+        <div>
+            <label for="loyalty">
+              Loyalty points: 
+            </label>
+            <br>
+            <p id="loyalty_pnts"></p><br>
+            <button id="loyalty_btn"- type="button">Click here to Check the loyalty points</button>
+        </div>
+        <br>
+        <div>
+          <label for="promoCode">Enter Promotion Code:</label>
+          <input type="text" id="promoCode">
+          <button type="button" id="checkButton" >Check Availability</button>
+           <br>
+          <p id="availabilityMessage"></p>
+        </div>
+      </div>
+      </div>
+    </form>
+
+
+
+    <!-- Adventure Booking form  -->
+    <form action="Adventure">
+      <div id="adventure_booking">
+
+        <label for="adventure_bookings">Select an Adventure:</label>
+        <select id="adventure_bookinf" name="adventures">
+          <option value="pool">Indoor Pool</option>
+          <option value="spa">Seven Heaven Spa</option>
+          <option value="gym">The fitness heaven Gym</option>
+          <option value="club">The Pulse Club</option>
+          <option value="theater">The Private theater</option>
+          <option value="diving">Diving</option>
+          <option value="cyclings">Cycling</option>
+          <option value="golf">Golf</option>
+          <option value="picnic">Picnic</option>
+        </select>
+        <input type="button" value="Book Adventure" id="adventure_book_btn">
+
+        <p id="confirmationMessage"></p>
+
+
+        <h3>Adventure Booking - Diving</h3>
+        <br><br>
+        <div class="diving_cost">
+          <p>o	Diving for local Adults (1 hr) – 5000LKR</p>
+          <P>o	Diving for local kids (above 5 years) – 2000LKR</P>
+          <P>o	Diving for foreign adults – 10000LKR</P>
+          <P>o	Diving for foreign kids – 5000LKR</P>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+          <label for="LocalAdults">Hours(Local Adults): </label>
+          <input type="number" min="0" max="5" id="localadults">
+          <br>
+          <label for="Localkids">Hours(Local Children): </label>
+          <input type="number" min="0" max="3" id="localkidss">
+          <br>
+          <label for="foreingadults" min="0" max="5">Hours(Foreing Adults):</label>
+          <input type="number" min="0" max="5" id="foreingadults" >
+          <br>
+          <label for="childrenunderfive" min="0" max="12">Hours(Foreing Children):</label>
+          <input type="number" min="0" max="3" id="foreingkids" >
+        </div>
+        <br>
+        <div>
+          <h3>Guidence During Diving (Optional)</h3>
+          <br>
+          <label for="adults">Adults(1000LKR)</label>
+          <input type="checkbox" id="adultguide">
+          <br>
+          <label for="kidsguidence">Children(500LKR)</label>
+          <input type="checkbox" id="childrenguide">
+        </div>
+        <br><br>
+
+         <button type="button" id="total_divin_cost">Check Diving Cost</button> <br> <br><p>Diving Cost:</p> <p id="display_diving_cost"></p>
+         <br><br>
+         <button type="button" id="bookNow">Book Now</button><br><br> <p id="confirmation">Booking Summary</p>
+         <br><br><br>
+         <button type="button" id="add_to_fav">Add To Favourite</button>
+          
+        </div>
+        </div>
+
+
+        
+  </form>
+  
+    
+
+    
+</body>
+</html>
